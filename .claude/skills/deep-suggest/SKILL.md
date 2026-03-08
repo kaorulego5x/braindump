@@ -1,5 +1,5 @@
 ---
-name: research-suggest
+name: deep-suggest
 description: Suggest additional research directions based on existing vault content
 ---
 
@@ -29,5 +29,5 @@ You are analyzing existing research in this vault and suggesting additional rese
    - **Effort**: Quick estimate (small/medium/large)
 
 5. **Ask the user**: Ask which directions they'd like to pursue. For accepted suggestions, offer to:
-   - Add them as new lines in `Inbox.md` for processing via `/research-plan`
+   - Add them as new lines in `Inbox.md` for processing via `/deep-plan`
    - Add them as new key questions to existing topics

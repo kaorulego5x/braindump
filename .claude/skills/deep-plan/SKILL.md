@@ -1,5 +1,5 @@
 ---
-name: research-plan
+name: deep-plan
 description: Create research plans from Inbox.md or from arguments
 ---
 
@@ -30,4 +30,4 @@ You are processing research topic words from `Inbox.md` and creating structured 
    - Commit with message: `Add research plan: <topic names>`
    - Push to main
 
-6. **Summary**: Tell the user which topics were planned and are ready for `/research-execute`.
+6. **Summary**: Tell the user which topics were planned and are ready for `/deep-research`.

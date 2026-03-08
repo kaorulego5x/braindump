@@ -1,5 +1,5 @@
 ---
-name: research-chat
+name: ask
 description: Casual research conversation — ask questions, get answers, findings saved to vault
 ---
 

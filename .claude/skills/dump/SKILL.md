@@ -1,5 +1,5 @@
 ---
-name: organize-thoughts
+name: dump
 description: Organize thoughts with vault context without destroying originals
 ---
 

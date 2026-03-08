@@ -22,21 +22,21 @@ Claude Code automates research workflows: planning, execution, and organization.
 
 ## Workflows
 
-### Research Workflow
+### Deep Research Workflow
 1. User adds a line to `Inbox.md` (just a word or phrase per line)
-2. `/research-plan` — Claude creates structured research plans, commits to main and pushes
-3. `/research-execute` — Execute research for planned topics, commits to main and pushes
-4. `/research-suggest` — Claude suggests follow-up research directions (read-only, no commits)
+2. `/deep-plan` — Claude creates structured research plans, commits to main and pushes
+3. `/deep-research` — Execute research for planned topics, commits to main and pushes
+4. `/deep-suggest` — Claude suggests follow-up research directions (read-only, no commits)
 
-### Casual Research
-1. `/research-chat <question>` — Ask anything, get an answer, findings auto-saved to the vault
+### Quick Q&A
+1. `/ask <question>` — Ask anything, get an answer, findings auto-saved to the vault
    - Searches existing vault for context, uses web if needed
    - Creates notes and references in the appropriate topic folder
    - Commits to main and pushes (no PR overhead)
 
 ### Thoughts Workflow
 1. User drops random thoughts in `Thoughts/` (freeform markdown)
-2. `/organize-thoughts` — Claude adds tags, wikilinks, and connections without modifying original content, commits to main and pushes
+2. `/dump` — Claude adds tags, wikilinks, and connections without modifying original content, commits to main and pushes
 
 ## Conventions
 - All files are Markdown (.md), compatible with Obsidian
@@ -64,9 +64,10 @@ Claude Code automates research workflows: planning, execution, and organization.
 - Thoughts files should be left as-is; only enhance, never rewrite
 
 ## Claude Code Skills
-- `/research-chat <question>` — Casual research Q&A — ask anything, findings saved to vault
-- `/research-plan [topics]` — Create research plans from Inbox.md or from arguments
-- `/research-execute [topics]` — Execute research for planned topics
-- `/research-suggest [topics]` — Suggest additional research directions
-- `/organize-thoughts [files]` — Organize thoughts with vault context
+- `/ask <question>` — Quick Q&A — ask anything, findings saved to vault
+- `/deep-plan [topics]` — Create research plans from Inbox.md or from arguments
+- `/deep-research [topics]` — Execute research for planned topics
+- `/deep-suggest [topics]` — Suggest additional research directions
+- `/dump [files]` — Organize thoughts with vault context
+- `/todo [task]` — Record and update todo items
 

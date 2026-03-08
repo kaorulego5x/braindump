@@ -1,5 +1,5 @@
 ---
-name: research-execute
+name: deep-research
 description: Execute research for planned topics
 ---
 
@@ -31,4 +31,4 @@ You are executing research for topics that have `status: planned` in their front
    - Commit with message: `Research: <topic names>`
    - Push to the main branch on GitHub.
 
-5. **Summary**: Tell the user what was researched and key findings. Suggest running `/research-suggest` afterward for follow-up directions.
+5. **Summary**: Tell the user what was researched and key findings. Suggest running `/deep-suggest` afterward for follow-up directions.

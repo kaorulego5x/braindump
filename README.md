@@ -1,19 +1,37 @@
 # Braindump
 
-A personal research vault powered by [Obsidian](https://obsidian.md) and [Claude Code](https://docs.anthropic.com/en/docs/claude-code). Drop topics into your inbox, and Claude automates the research — planning, execution, and organization.
+[日本語版はこちら](README.ja.md)
 
-## How It Works
+Your brain has better things to do than remember stuff. Let it dump everything here — Claude will sort it out.
 
-1. **You write topics** — Add a word or phrase to `Inbox.md`
-2. **Claude researches** — Run slash commands to plan and execute research
-3. **Knowledge accumulates** — Findings are organized into structured topic folders with notes, references, and wikilinks
+A personal knowledge base powered by [Obsidian](https://obsidian.md) and [Claude Code](https://docs.anthropic.com/en/docs/claude-code). Thoughts, research, random 3am ideas — throw it all in, get structured knowledge out.
 
-Everything is plain Markdown, fully compatible with Obsidian.
+**The idea:** You talk to Claude casually and briefly. Claude does the heavy lifting. You open Obsidian later when you have time and read through everything properly — organized, linked, and searchable. Think [Getting Things Done](https://en.wikipedia.org/wiki/Getting_Things_Done) — capture everything, process later, trust the system.
+
+## What Can I Do With This?
+
+### 1. Brain Dump (literally)
+
+Scribble anything into `Thoughts/`. Half-baked ideas, shower thoughts. Even such ideas can be digested by Claude and can turn into gold.
+
+### 2. Quick Q&A
+
+"Why did Betamax lose?" "How do transformers actually work?" Just ask Claude. It checks what you already know in the vault, hits the web if needed, and files everything away. You get a quick answer now; a nicely structured note waiting in Obsidian later.
+
+### 3. Deep Research
+
+Heard an interesting word? Tell Claude to "memo this" and it stashes it in `Inbox.md` for later. When you've got time and coffee, tell Claude to research your inbox — it plans, executes, and organizes everything so you just read the results in Obsidian.
+
+### 4. Todo
+
+"Remember to read that paper." Tell Claude to add it to your todo list. Check things off, list what's left — all tracked in `Todo.md`.
+
+Everything is plain Markdown. Your notes are yours, not locked in some app.
 
 ## Prerequisites
 
-- [Obsidian](https://obsidian.md) (recommended, but any Markdown editor works)
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) CLI installed and authenticated
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) — CLI or [web](https://claude.ai/code) both work
+- [Obsidian](https://obsidian.md) — recommended for the pretty graph view, wikilinks, and Dataview queries. Any Markdown editor works, but you'll be missing out
 - Git
 
 ## Setup
@@ -25,40 +43,26 @@ Everything is plain Markdown, fully compatible with Obsidian.
    cd my-braindump
    ```
 
-2. **Open in Obsidian** — Open the repo folder as an Obsidian vault. Install the [Dataview](https://github.com/blacksmithgu/obsidian-dataview) community plugin for the dashboard queries in `Home.md`.
+2. **Open in Obsidian** — Open the folder as a vault. Grab the [Dataview](https://github.com/blacksmithgu/obsidian-dataview) plugin for the dashboard in `Home.md`.
 
-3. **Start Claude Code** — Run `claude` in the repo directory. The `CLAUDE.md` file will automatically configure Claude with the vault's conventions and available skills.
+3. **Start Claude Code** — Run `claude` in the directory. `CLAUDE.md` tells Claude how everything works — no setup needed on your part.
 
-## Slash Commands
+## Usage
 
-Run these inside Claude Code:
+Just talk to Claude. It figures out what you want. Or use slash commands if you're that kind of person:
 
-| Command | What it does |
-|---|---|
-| `/research-plan` | Reads `Inbox.md` and creates structured research plans in `Topics/` |
-| `/research-execute` | Executes research for planned topics using web search |
-| `/research-chat <question>` | Ask any question — findings are saved to the vault |
-| `/research-suggest` | Suggests follow-up research directions based on existing content |
-| `/organize-thoughts` | Enhances files in `Thoughts/` with tags and wikilinks (never rewrites) |
+| Command              | What it does                                                |
+| -------------------- | ----------------------------------------------------------- |
+| `/ask <question>`    | **Q&A** — ask anything, get an answer, findings saved       |
+|                      |                                                             |
+| `/deep-plan`         | **Deep research step 1** — turns your inbox into plans      |
+| `/deep-research`     | **Deep research step 2** — runs the actual research         |
+| `/deep-suggest`      | **Deep research bonus** — suggests follow-up directions     |
+|                      |                                                             |
+| `/dump`              | **Thoughts** — enhances with tags and wikilinks             |
+| `/todo [task]`       | **Todo** — add, check off, or list tasks                    |
 
-## Typical Workflow
-
-```
-# 1. Add topics to your inbox (or edit Inbox.md directly in Obsidian)
-echo "quantum computing" >> Inbox.md
-
-# 2. Open Claude Code
-claude
-
-# 3. Create research plans
-/research-plan
-
-# 4. Execute the research
-/research-execute
-
-# 5. Ask follow-up questions
-/research-chat What are the main approaches to quantum error correction?
-```
+`/ask` is for quick, one-off questions. The `/deep-plan` + `/deep-research` combo is for when you want to queue up topics and batch-research them later.
 
 ## Vault Structure
 
@@ -78,12 +82,12 @@ claude
 └── .claude/skills/       # Skill definitions for slash commands
 ```
 
-## Customizing
+## Make It Yours
 
-- **Templates** — Edit files in `Templates/` to change the structure of new topics, notes, and references.
-- **Tags** — The default taxonomy uses `#topic/<name>`, `#status/planned|active|done`, `#thought`, and `#reference`. Modify `CLAUDE.md` to change this.
-- **Skills** — Each skill lives in `.claude/skills/<name>/SKILL.md`. Edit these to change how Claude handles research.
-- **CLAUDE.md** — This is the main instruction file for Claude Code. Adjust conventions, workflows, or add new rules here.
+- **Templates** — Edit files in `Templates/` to reshape how new topics, notes, and references look.
+- **Tags** — Default taxonomy: `#topic/<name>`, `#status/planned|active|done`, `#thought`, `#reference`. Change them in `CLAUDE.md`.
+- **Skills** — Each lives in `.claude/skills/<name>/SKILL.md`. Tweak how Claude handles things, or add your own.
+- **CLAUDE.md** — The brain of the operation. This is where Claude learns your rules.
 
 ## Conventions
 
@@ -94,4 +98,4 @@ claude
 
 ## License
 
-This is a template for personal use. Fork it and make it your own.
+Fork it. Make it weird. Make it yours.
