@@ -8,3 +8,5 @@ tags: []
 paravox-finance
 game-company-finance-organization
 kamiyama-marugoto-kosen
+openai-symphony
+openai-github-alternative
