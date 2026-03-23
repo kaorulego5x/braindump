@@ -16,13 +16,13 @@ ProfoundはSaaS型のGEOプラットフォームで、創業からわずか18ヶ
 
 ### 資金調達の経緯
 
-| ラウンド | 金額 | リード投資家 | 時期 |
-|----------|------|-------------|------|
-| Seed | $3.5M | - | 2024年 |
-| Series A | $20M | Kleiner Perkins | 2025年初頭 |
-| Series B | $35M | Sequoia Capital | 2025年8月 |
-| Series C | $96M | Lightspeed Venture Partners | 2026年2月24日 |
-| **合計** | **$155M+** | | |
+| ラウンド     | 金額         | リード投資家                      | 時期         |
+| -------- | ---------- | --------------------------- | ---------- |
+| Seed     | $3.5M      | -                           | 2024年      |
+| Series A | $20M       | Kleiner Perkins             | 2025年初頭    |
+| Series B | $35M       | Sequoia Capital             | 2025年8月    |
+| Series C | $96M       | Lightspeed Venture Partners | 2026年2月24日 |
+| **合計**   | **$155M+** |                             |            |
 
 Series Cにおける評価額は**10億ドル（$1B）**で、創業から約18ヶ月でユニコーンステータスに到達。他の参加投資家にはSaga VC、South Park Commons、Evantic Capitalが含まれる。
 
