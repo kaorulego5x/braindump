@@ -42,6 +42,7 @@ LIMIT 10
 - [[Maps/index|All Maps]]
 
 ## Quick Links
+- [[ReadingList/index|Reading List]]
 - [[Templates/topic-template|New Topic Template]]
 - [[Templates/note-template|New Note Template]]
 - [[Templates/reference-template|New Reference Template]]
